@@ -56,10 +56,6 @@ a {
     /* margin: 20px; */
 }
 
-.product-image {
-    /* flex: 1; */
-}
-
 .product-image img {
     /* max-width: 70%; */
     width: 400px;
@@ -102,20 +98,6 @@ a {
     font-size: large;
     margin-left: 10px;
 }
-
-/* .headingDetail1 {
-    font-size: 25px;
-    margin-bottom: 0px;
-}
-
-.headingDetail2 {
-    font-size: 40px;
-    margin-top: 0px;
-}
-
-.price{
-    margin-top: 0px;
-}  */
 
 button {
     background-color: #D00404;
@@ -228,3 +210,107 @@ button {
     font-size: large;
     margin-left: 10px;
 }
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dot:nth-child(1) {
+    animation: dot-animation 2s infinite linear;
+}
+
+@keyframes dot-animation {
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: #333;
+    }
+}
+
+.top-products-container {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.top-products-container h2 {
+    color: #A9AFC3;
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #141414;
+    color: #A9AFC3;
+    font-size: larger;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5% 5%;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #ff0000;
+}
+
+/* cart page */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin-bottom: 5px;
+}
+
+.product .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product .old-price {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.product button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
