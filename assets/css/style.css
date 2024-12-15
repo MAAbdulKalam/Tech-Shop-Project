@@ -647,3 +647,32 @@ footer {
 .line-separator span {
     flex-grow: 1;
 }
+
+.hover-content {
+    position: absolute;
+    top: 8%;
+    right: 1.8%;
+    background-color: #161819;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9999;
+    width: 250px;
+    text-align: center;
+    font-size: small;
+    border: 1px solid #515151;
+}
+
+.icon3:hover .hover-content {
+    display: block;
+}
+
+.hover-content .hoverSignup {
+    margin-right: 100px;
+    color: #A9AFC3;
+    font-weight: bold;
+    font-size: smaller;
+    margin-bottom: 0px;
+    border: 1px solid #515151;
+    background-color: #171719;
+}
