@@ -47,7 +47,7 @@ a {
 
 /* ----------content------------ */
 
-.product-container {
+.product-container-index {
     width: 95vw;
     display: flex;
     justify-content: space-around;
@@ -62,39 +62,39 @@ a {
     margin-right: 0px;
 }
 
-.product-details {
+.product-details-index {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.product-details h2 {
+.product-details-index h2 {
     font-size: 25px;
     margin-top: 20px;
 }
 
-.product-details h3 {
+.product-details-index h3 {
     margin-top: 0px;
     font-size: 50px;
     margin-bottom: 35px;
     display: inline-flex;
 }
 
-.price {
+.product-details-index .price {
     margin-bottom: 35px;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.price1 {
+.product-details-index .price1 {
     font-size: x-large;
 }
 
-.price2 {
+.product-details-index .price2 {
     color: #6C757D;
     font-size: large;
     margin-left: 10px;
 }
 
-button {
+.product-details-index button {
     background-color: #D00404;
     color: white;
     border: transparent;
@@ -250,7 +250,7 @@ button {
     justify-content: center;
 }
 
-button {
+.top-products-container .buttons-container button {
     background-color: #141414;
     color: #A9AFC3;
     font-size: larger;
@@ -258,13 +258,14 @@ button {
     border-radius: 5px;
     margin: 5% 5%;
     cursor: pointer;
+    border-color: transparent;
 }
 
-.hoverBtn:hover {
+.top-products-container .buttons-container .hoverBtn:hover {
     background-color: #ff0000;
 }
 
-.active {
+.top-products-container .buttons-container .active {
     background-color: #ff0000;
 }
 
@@ -299,6 +300,7 @@ button {
     height: 200px;
     background-color: #161819;
     transition: scale 5s;
+    cursor: pointer;
 }
 
 .imgHover:hover {
@@ -309,12 +311,10 @@ button {
     max-width: 50%;
     height: auto;
     margin: 15px 0px;
-
 }
 
 .prod_details {
     background-color: #141414;
-
 }
 
 .product h3,
@@ -356,13 +356,14 @@ hr {
     margin-left: 10px;
 }
 
-.product button {
+.product-grid .product .prod_details button {
     background-color: #D00404;
     color: #FFFFF4;
-    padding: 5px 85px;
+    padding: 10px 105px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 3px 0px 3px 0px;
+    margin: 12px 0px 15px 0px;
+    border-color: transparent;
 }
 
 .browse-all {
@@ -648,7 +649,9 @@ footer {
     flex-grow: 1;
 }
 
-.hover-content {
+/* popup signup hover */
+
+.icons .hover-content {
     position: absolute;
     top: 8%;
     right: 1.8%;
@@ -667,14 +670,14 @@ footer {
     display: block;
 }
 
-.hover-content .hoverSignup {
-    margin-right: 100px;
+.icon3 .hover-content .hoverSignup {
+    margin: 8px 100px 0px 0px;
     color: #A9AFC3;
     font-weight: bold;
     font-size: smaller;
-    margin-bottom: 0px;
     border: 1px solid #515151;
     background-color: #171719;
+    padding: 10px 30px;
 }
 
 /* product Details page container */
@@ -682,7 +685,9 @@ footer {
 .product-container {
     display: flex;
     margin: 20px 20px;
-    
+    position: absolute;
+    top: 50px;
+
 }
 
 .product-images {
@@ -709,22 +714,23 @@ footer {
 
 .product-details {
     flex: 1;
-
+    margin-bottom: 150px;
 }
 
 .product-details h2 {
     font-size: 24px;
     color: #A9AFC3;
+    margin-bottom: 10px;
 }
 
 .product-details p {
     padding: 0px;
-    margin-top: 0px;
+    margin: 10px 0px;
     color: #A9AFC3;
 }
 
 .product-details .rating {
-    margin: 12px 0px;
+    margin: 15px 0px;
     padding: 0px;
     color: #ED1D24;
     cursor: pointer;
@@ -738,22 +744,21 @@ footer {
     color: #464646;
 }
 
-.product-details .price {
+.product-details .price-detail {
     font-size: xx-large;
     font-weight: bolder;
     color: #A9AFC3;
-    margin-bottom: 0px;
 }
 
-.product-details .old-price {
+.product-details .price-detail .old-price {
     color: #6C757D;
     text-decoration: line-through;
     margin-left: 10px;
 }
 
-.product-details .discount {
+.product-details .price-detail .discount {
     color: #008400;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: 18px;
 }
 
@@ -761,15 +766,17 @@ footer {
     background-color: #008000;
     color: #FFFFFF;
     position: absolute;
-    top: 51%;
-    right: 4%;
+    top: 24%;
+    right: 1.5%;
     padding: 10px 25px;
     border-radius: 3px;
     cursor: pointer;
 }
 
 .product-details .taxes {
-    font-size: small;
+    font-size: large;
+    /* margin-top: 0px; */
+    color: #6C757D;
 }
 
 .product-details hr {
@@ -777,8 +784,8 @@ footer {
 }
 
 .product-details .offers {
-    margin-top: 30px;
-    color: #A9AFC3;     
+    color: #A9AFC3;
+    font-size: large;
 }
 
 .product-details .offers p {
@@ -805,8 +812,71 @@ footer {
 .add-to-cart-btn {
     background-color: #D00404;
     color: #FBF9FF;
-    padding: 2% 14%;
+    padding: 2% 16.5%;
     border-radius: 5px;
     cursor: pointer;
     margin: 20px 0px;
+    border-color: transparent;
+    font-size: medium;
+}
+
+/* specification header */
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    background-color: #141414;
+    color: #A3BBD0;
+    border: transparent;
+    padding: 10px 40px;
+    margin: 60% 5% 0px 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tab.active {
+    background-color: #FF0000;
+}
+
+.tab:hover {
+    background-color: #FF0000;
+}
+
+/* specification data */
+.product-info {
+    margin-top: 50px;
+}
+
+.product-info .info-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 2%;
+    color: #A8AFC3;
+    margin-left: 1%;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-info .info-item span:last-child {
+    font-weight: bold;
+}
+
+.product-info span {
+    color: #ACB2C8;
+
+}
+
+/* related-products-heading */
+
+.related-products-heading {
+    text-align: center;
+    color: #A9AFC3;
+    font-size: 25px;
+    margin-top: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
