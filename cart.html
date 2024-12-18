@@ -47,49 +47,84 @@
     </header>
 
     <!-- order summary -->
-
-    <div class="order-container">
-        <div class="product-list">
-            <div class="product">
-                <img src="./assets/products/products/jbl660nc-1.png" alt="Product 1">
-                <div class="product-info">
+    <div class="cart-container">
+        <div class="cart-items">
+            <div>
+                <img src="./assets/products/products/jbl660nc-1.png" />
+                <div>
                     <p>JBL Live 660NC Wireless Over-Ear NC Headphones</p>
-                    <div class="price">
-                        ₹9,999 <span class="old-price">₹14,999</span>
-
-                        <button class="add-to-cart-btn"></button>
+                    <p>₹9,999 <span>₹14,999</span></p>
+                    <div class="count">
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
                     </div>
                 </div>
-                <!-- <div class="product"> 
-                <img src="./assets/products/products/boat518-1.png" alt="Product 2">
             </div>
-            <div class="product"> 
-                <img src="./assets/products/products/boat131-1.png" alt="Product 3">
-            </div> -->
+            <hr>
+            <div>
+                <img src="./assets/products/products/boat518-1.png" />
+                <div>
+                    <p>boAt Rockerz 518 On-Ear Wireless Headphones</p>
+                    <p>₹1,299 <span>₹3,990</span></p>
+                    <div class="count">
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
+                    </div>
+                </div>
             </div>
-
-
-            <div class="order-summary">
-                <h4>Order Summary (4 items)</h4>
-                <table>
-                    <tr>
-                        <td>Original Price</td>
-                        <td>₹22,978</td>
-                    </tr>
-                    <tr>
-                        <td>Discount</td>
-                        <td>₹10,132</td>
-                    </tr>
-                    <tr>
-                        <td>Delivery</td>
-                        <td>Free</td>
-                    </tr>
-                </table>
-                <div class="total-price">Total Price: ₹12,846</div>
-                <button class="checkout-btn">Checkout</button>
+            <hr>
+            <div>
+                <img src="./assets/products/products/boat131-1.png" />
+                <div>
+                    <p>boAt Airdopes 131 Wireless in-Ear Earbuds</p>
+                    <p>₹1,099 <span>₹2,990</span></p>
+                    <div class="count">
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <img src="./assets/products/products/boat110-1.png" />
+                <div>
+                    <p>boAt BassHeads 110 In-Ear Wired Earphones</p>
+                    <p>₹449 <span>₹999</span></p>
+                    <div class="count">
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- order summary -->
+        <div class="orderSummaryPrice">
+            <h5>Order Summary ( 4 items )</h5>
+            <div>
+                <p>Orginial Price</p>
+                <p class="price-white">₹22,978</p>
+            </div>
+            <div>
+                <p>Discount</p>
+                <p class="price-green">-₹10,132</p>
+            </div>
+            <div>
+                <p>Delivery</p>
+                <p class="price-green">Free</p>
+            </div>
+            <hr>
+            <div>
+                <p class="price-white tot">Total Price</p>
+                <p class="price-white tot-p">₹12,846</p>
+            </div>
+            <button>Checkout</button>
+        </div>
+    </div>
 </body>
 
 </html>

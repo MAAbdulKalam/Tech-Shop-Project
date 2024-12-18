@@ -882,120 +882,135 @@ footer {
     font-weight: bolder;
 }
 
-/* order summary */
+/* cart page starts from here... */
 
-.order-container {
+.cart-container {
+    margin: 70px 20px;
     display: flex;
-    margin: 50px;
+    justify-content: space-between;
 }
 
-.product-list {
-    width: 700px; 
-    overflow-y: scroll; 
-    /* max-height: 500px;  */
-    /* display: grid; 
-    grid-template-columns: repeat(2, 1fr); */
-    align-items: last baseline;
-    background-color: white; 
+.cart-items {
+    overflow-y: scroll;
+    height: 400px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    border-radius: 4px;
+    background-color: #161819;
 }
 
-.product-list .product img {
-    width: 250px;
-    height: auto;
-    /* margin-bottom: 15px; */
-    margin-right: 400px;
-    background-color: gray;
-}
-
-.product-info{
-    flex: 1;     
-    background-color: #008000;
-    width: 250px;
-    margin-left: 300px;
-    position: absolute;
-    top: 92px;
-    left: 150px;
-}
-
-.product-info p {
-    font-size: 20px;
-    margin-bottom: 10px;
+.cart-items img {
     width: 200px;
-
+    /* height: auto; */
 }
 
-.product-info .price {
-    font-size: 28px;
-    font-weight: bold;
-    color: #ff0000;
-    margin-bottom: 10px;
+.cart-items>div {
+    display: flex;
+    gap: 30px;
+    position: relative;
 }
 
-.product-info .old-price {
-    color: #888;
-    text-decoration: line-through;
-    margin-right: 5px;
-}
-
-.product-info .discount {
-    color: #fff;
-    background-color: #ff0000;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-
-.product-info .in-stock {
-    color: #00ff00;
-}
-
-.product-info .offers {
-    margin-top: 20px;
-}
-
-.product-info .offers p {
-    margin-bottom: 5px;
-}
-
-.add-to-cart-btn {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.order-summary-right {
-    width: 300px;
-}
-
-.order-summary-right h4 {
+.cart-items>div>div p:nth-of-type(1) {
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
-.order-summary-right table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.order-summary-right table td {
-    padding: 10px;
-    border-bottom: 1px solid #444;
-}
-
-.order-summary-right .total-price {
-    font-size: 20px;
+.cart-items>div>div p:nth-of-type(2) {
+    color: #A7B2C8;
+    font-size: 30px;
+    margin-bottom: 20px;
     font-weight: bold;
-    color: #fff;
 }
 
-.checkout-btn {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
+.cart-items span {
+    font-size: 25px;
+    color: #6C757D;
+    text-decoration: line-through;
+}
+
+.cart-container hr {
+    border: 0;
+    border-top: 1px solid #464747;
+}
+
+.count {
+    display: inline-flex;
+    border: 1px solid #3A3A3B;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    align-items: center;
+    margin-left: 21px;
+}
+
+.count button {
+    color: #A9AFC3;
+    background-color: #222222;
+    padding: 5px 15px;
+    font-size: 30px;
+}
+
+.count p {
+    color: #FF0000;
+    margin: 0 !important;
+    padding: 5px 20px;
+}
+
+/* order Summary Price details*/
+
+.orderSummaryPrice {
+    margin-right: 10%;
+}
+
+.orderSummaryPrice h5 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #ABB1C5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.orderSummaryPrice div {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.orderSummaryPrice>div p:nth-of-type(1) {
+    color: #ACB9C7;
+    margin-bottom: 15px;
+}
+
+.orderSummaryPrice .price-green {
+    color: #008000;
+}
+
+.orderSummaryPrice price-white {
+    color: #A9AFC3;
+}
+
+.tot {
+    color: #A9AFC3 !important;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.tot-p {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.orderSummaryPrice hr {
+    margin: 30px auto;
+}
+
+.orderSummaryPrice button {
+    width: 100%;
+    padding: 10px;
+    color: #F7F2FF;
+    background-color: #D00404;
     border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
+    margin-top: 30px;
+    border-color: transparent;
 }
