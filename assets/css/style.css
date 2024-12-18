@@ -757,7 +757,7 @@ footer {
     margin-left: 10px;
 }
 
-.product-details .price-detail .discount {
+.product-details .price-detail .discountOfProduct {
     color: #008400;
     /* margin-top: 10px; */
     font-size: 18px;
@@ -848,11 +848,11 @@ footer {
 }
 
 /* specification data */
-.product-info {
+.product-info-specification {
     margin-top: 50px;
 }
 
-.product-info .info-item {
+.product-info-specification .info-item {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 2%;
@@ -862,11 +862,11 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.product-info .info-item span:last-child {
+.product-info-specification .info-item span:last-child {
     font-weight: bold;
 }
 
-.product-info span {
+.product-info-specification span {
     color: #ACB2C8;
 
 }
@@ -890,73 +890,69 @@ footer {
 }
 
 .product-list {
-    width: 300px; 
+    width: 700px; 
     overflow-y: scroll; 
-    max-height: 500px; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: last baseline; 
+    /* max-height: 500px;  */
+    /* display: grid; 
+    grid-template-columns: repeat(2, 1fr); */
+    align-items: last baseline;
+    background-color: white; 
 }
 
-.product-list img {
-    width: 100%;
+.product-list .product img {
+    width: 250px;
     height: auto;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+    margin-right: 400px;
+    background-color: gray;
 }
 
-.main-product-image-container {
-    width: 300px;
-    margin-right: 30px;
+.product-info{
+    flex: 1;     
+    background-color: #008000;
+    width: 250px;
+    margin-left: 300px;
+    position: absolute;
+    top: 92px;
+    left: 150px;
 }
 
-.main-product-image-container img {
-    width: 100%;
-    height: auto;
-}
-
-.product-details {
-    flex: 1; 
-}
-
-.product-details h2 {
-    font-size: 24px;
+.product-info p {
+    font-size: 20px;
     margin-bottom: 10px;
+    width: 200px;
+
 }
 
-.product-details .rating {
-    color: #ffd700;
-    margin-bottom: 10px;
-}
-
-.product-details .price {
+.product-info .price {
     font-size: 28px;
     font-weight: bold;
     color: #ff0000;
     margin-bottom: 10px;
 }
 
-.product-details .old-price {
+.product-info .old-price {
     color: #888;
     text-decoration: line-through;
     margin-right: 5px;
 }
 
-.product-details .discount {
+.product-info .discount {
     color: #fff;
     background-color: #ff0000;
     padding: 5px 10px;
     border-radius: 3px;
 }
 
-.product-details .in-stock {
+.product-info .in-stock {
     color: #00ff00;
 }
 
-.product-details .offers {
+.product-info .offers {
     margin-top: 20px;
 }
 
-.product-details .offers p {
+.product-info .offers p {
     margin-bottom: 5px;
 }
 
