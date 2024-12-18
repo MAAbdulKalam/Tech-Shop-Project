@@ -950,6 +950,7 @@ footer {
     background-color: #222222;
     padding: 5px 15px;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .count p {
@@ -1013,4 +1014,6 @@ footer {
     border-radius: 5px;
     margin-top: 30px;
     border-color: transparent;
+    cursor: pointer;
 }
+
