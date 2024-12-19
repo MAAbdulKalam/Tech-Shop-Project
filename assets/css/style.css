@@ -18,6 +18,7 @@ body {
     font-size: x-large;
     font-weight: bold;
     color: #A9AFC3;
+    font-family:sans-serif;
 }
 
 .headerIcons {
@@ -1016,4 +1017,6 @@ footer {
     border-color: transparent;
     cursor: pointer;
 }
+
+/* The End */
 
